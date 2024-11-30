@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/product
+    username: local
+    password: local
+    driver-class-name: org.postgresql.Driver
+
+  jpa.show-sql: true
+  jpa.properties.hibernate.format_sql: true
+
+  flyway:
+    enabled: true
+
+server:
+  port: 8080
+
+jwt:
+  secret:
+    key: some-random-secret # in a real scenario we would fetch the key e.g. from cloud providers key vault
